@@ -16,8 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4.2;
-
+const nuevoModulo = 21 % 5 === 1 ;
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -103,9 +102,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var prod = x / y
-  var res = prod - Math.floor(prod)
-  var rest = rest * y
+  var rest = x % y
   return rest
 }
 
@@ -172,9 +169,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0){
-    return 'es positivo'
+    return 'Es positivo'
   }else if (numero<0){
-    return 'es negativo'
+    return 'Es negativo'
   }
   return false
 }
@@ -199,7 +196,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var saludo = 'hola ' + nombre + '!'
+  var hola = 'Hola ' + nombre
+  var saludo = agregarSimboloExclamacion(hola)
   return saludo
 }
 
@@ -244,15 +242,15 @@ function esVocal(letra){
   //Escribe tu código aquí
   if(letra.length===1){
     if(letra === 'a'){
-      return 'es vocal'
+      return 'Es vocal'
     }else if (letra === 'e'){
-      return 'es vocal'
+      return 'Es vocal'
     }else if (letra === 'i'){
-      return 'es vocal'
+      return 'Es vocal'
     }else if (letra === 'o'){
-      return 'es vocal'
+      return 'Es vocal'
     }else if (letra === 'u'){
-      return 'es vocal'
+      return 'Es vocal'
     }else{
       return 'Dato incorrecto'
     }
